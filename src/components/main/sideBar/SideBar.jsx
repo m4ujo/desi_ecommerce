@@ -18,7 +18,7 @@ const SideBar = () => {
 
     const clearCart = async () => { // Remove all cart products
         try {
-            await axios.delete('http://localhost:3001/productCart', 
+            await axios.delete('https://desi-ecommerce-backend.onrender.com/productCart', 
             {data: {shoppingCartId: openCart, request: 'all'}});
 
             dispatch({type: 'SET_REFETCH_CART', refetchCart: Math.random() * 2});
@@ -43,7 +43,7 @@ const SideBar = () => {
             <div className='cart-box'>
                 {deleteCart === false ? <div>
                  <div className='header-sidebar'>
-                        <h3>Your Cart</h3>
+                        <h3>Carrito</h3>
                         { productCart.length > 0 ?
                         <button
                         onClick={() => {
@@ -61,7 +61,7 @@ const SideBar = () => {
                         { productCart.length > 0 && <ShoppingList /> }
 
                         { productCart.length <= 0 && <div className='empty-box'>
-                            <p>Your Cart is Empty ):</p>
+                            <p>Carrito esta vacio ):</p>
                         </div>  }
                     </div>
 

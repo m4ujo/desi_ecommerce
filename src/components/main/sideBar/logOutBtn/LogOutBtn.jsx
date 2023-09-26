@@ -9,7 +9,7 @@ const LogOutBtn = () => {
     const history = useHistory();
     const dispatch = useDispatch();
 
-    const logOutHandler = () => { // Log out function
+    const logOutHandler = () => { // Cerrar sesión function
         dispatch({type: 'SET_SESSION', session: ''});
         localStorage.clear();
         history.push('/i/login');
@@ -29,7 +29,7 @@ const LogOutBtn = () => {
                 <div className='dropdown-content'>
                     <div className='dropdown-box'>
                         <button onClick={logOutHandler} className='btn-logout'>
-                            Log out
+                            Cerrar sesión
                         </button>
                     </div>
                 </div>

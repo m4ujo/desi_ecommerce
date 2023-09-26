@@ -10,7 +10,7 @@ const LogOutBtn = () => {
     const history = useHistory();
     const dispatch = useDispatch();
 
-    const logOutHandler = () => { // Log out function
+    const logOutHandler = () => { // Cerrar sesión function
         dispatch({type: 'SET_SESSION', session: ''});
         dispatch({type: 'SET_TOTAL_PRICE', totalPrice:  '0.00'});
         dispatch({type: 'SET_OPEN_CART', openCart: {}});
@@ -33,7 +33,7 @@ const LogOutBtn = () => {
                 <div className='dropdown-content'>
                     <div className='dropdown-box'>
                         <button onClick={logOutHandler} className='btn-logout'>
-                            Log out
+                            Cerrar sesión
                         </button>
                     </div>
                 </div>

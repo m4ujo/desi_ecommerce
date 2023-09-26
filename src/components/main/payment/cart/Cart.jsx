@@ -56,7 +56,7 @@ const Cart = () => {
                         </div>
 
                         <div className='right-box'>
-                            <p>Total amount: <span>$</span>{e.productCart.price}</p>
+                            <p>Total amount: <span>S/</span>{e.productCart.price}</p>
                             <p>Quantity: {e.productCart.quantity}</p>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ const Cart = () => {
             </div>
 
             <div className='total-price-box'>
-                <p>Subtotal: <span>$</span>{subTotal}</p>
+                <p>Subtotal: <span>S/</span>{subTotal}</p>
                 <p>{productNum} Products</p>
             </div>
             </div>

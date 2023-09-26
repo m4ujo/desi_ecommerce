@@ -53,7 +53,7 @@ const ShoppingList = () => {
                             </div>
 
                             <div className='price-box'>
-                                <p><span>$</span>{e.productCart.price}</p>
+                                <p><span>S/ </span>{e.productCart.price}</p>
                             </div>
                         </div>
 

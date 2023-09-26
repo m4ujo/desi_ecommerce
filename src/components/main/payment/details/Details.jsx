@@ -104,7 +104,7 @@ const Details = () => {
             head: [['Description', 'Quantity', 'Total Amount']],     
             body: [...arrPdf],
             foot: [
-                [{ content: `Subtotal: $${subTotal}`, colSpan: 2, rowSpan: 2, styles: { halign: 'left' } }]
+                [{ content: `Subtotal: S/ ${subTotal}`, colSpan: 2, rowSpan: 2, styles: { halign: 'left' } }]
             ]
         });
         doc.save('DESI-Online-Receipt.pdf');

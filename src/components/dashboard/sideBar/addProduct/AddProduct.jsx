@@ -214,7 +214,7 @@ const AddProduct = () => {
                     type='text' 
                     name='productName' 
                     id='productName'
-                    placeholder='e.g. Ice Cream, Vanilla'
+                    placeholder='Papel Higiénico Naranja ELITE'
                     onChange={(e) => {
                         if (errMsgProdName && e.target.value.length > 0) {
                             setErrMsgProdName('');
@@ -276,7 +276,7 @@ const AddProduct = () => {
                     type='text' 
                     name='newCategory' 
                     id='newCategory' 
-                    placeholder='e.g. Frozen'
+                    placeholder='Limpieza'
                     disabled={isInput}
                     ref={inputNewCategory}
                     onChange={(e) => {
@@ -298,7 +298,7 @@ const AddProduct = () => {
                     type='text' 
                     name='price' 
                     id='price' 
-                    placeholder='e.g. 4.95'
+                    placeholder='26.90'
                     onChange={(e) => {
                         if (e.target.value.length > 0) {
                             setErrMsgPrice('');

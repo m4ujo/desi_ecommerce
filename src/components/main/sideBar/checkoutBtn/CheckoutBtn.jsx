@@ -12,7 +12,7 @@ const CheckoutBtn = () => {
             <div>
                 <span>Subtotal:</span>
                 <span>
-                    <span>$</span>{totalPrice}
+                    <span>S/ </span>{totalPrice}
                 </span>
             </div>
             

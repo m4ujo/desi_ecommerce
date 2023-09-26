@@ -75,7 +75,7 @@ const AddProduct = () => {
 
     const handleFileInputChange = (e) => { // Input file (img) validation
         if (e.target.files[0]) {
-            if (/^.*\.(jpg|JPG|png|PNG|jpeg|JPEG)$/.test(e.target.files[0].name)) {
+            if (/^.*\.(jpg|JPG|png|PNG|jpeg|JPEG|webp|WEBP)$/.test(e.target.files[0].name)) {
                 e.target.setCustomValidity('');
 
                 const file = e.target.files[0];
@@ -95,7 +95,7 @@ const AddProduct = () => {
                 }    
             } else {
                 delete obj.img;
-                console.error('Supported file formats: JPG/JPEG and PNG');
+                console.error('Supported file formats: JPG/JPEG, PNG and WEBP');
             }
         }
     }
@@ -192,7 +192,7 @@ const AddProduct = () => {
                     name='img' 
                     id='img'
                     className='input-file'
-                    accept='image/png, image/jpeg, image/jpg'
+                    accept='image/png, image/jpeg, image/jpg, image/webp'
                     onChange={handleFileInputChange}
                 />
 

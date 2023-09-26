@@ -51,7 +51,7 @@ const EditProduct = () => {
 
     const handleFileInputChange = (e) => { // Input file (img) validation
         if (e.target.files[0]) {
-            if (/^.*\.(jpg|JPG|png|PNG|jpeg|JPEG)$/.test(e.target.files[0].name)) {
+            if (/^.*\.(jpg|JPG|png|PNG|jpeg|JPEG|webp|WEBP)$/.test(e.target.files[0].name)) {
                 e.target.setCustomValidity('');
 
                 const file = e.target.files[0];
@@ -69,7 +69,7 @@ const EditProduct = () => {
                     console.error('Failed to generate the image');
                 }    
             } else {
-                e.target.setCustomValidity(`Supported file formats: JPG/JPEG and PNG`);
+                e.target.setCustomValidity(`Supported file formats: JPG/JPEG, PNG and WEBP`);
                 e.target.reportValidity();
             }
         }
@@ -134,7 +134,7 @@ const EditProduct = () => {
                     type='file' 
                     name='image' 
                     id='image'
-                    accept='image/png, image/jpeg, image/jpg'
+                    accept='image/png, image/jpeg, image/jpg, image/webp'
                     onChange={handleFileInputChange}
                 />
 

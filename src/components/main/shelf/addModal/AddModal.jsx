@@ -38,7 +38,7 @@ const AddModal = () => {
 
     const incrementProductCart = async (productId, request) => { // Change product amount
         try {
-            await axios.put('https://desi-ecommerce-backend.onrender.come-backend.onrender.com//productCart', 
+            await axios.put('https://desi-ecommerce-backend.onrender.come-backend.onrender.com/productCart', 
             {shoppingCartId: openCart, productId: productId, request: request});
 
             dispatch({type: 'SET_REFETCH_CART', refetchCart: Math.random() * 2 });

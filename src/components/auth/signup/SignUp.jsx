@@ -100,7 +100,7 @@ const SignUp = () => {
     const createAccount = async (fname, lname, city, street) => { // Create new account function
         try {
             setSpinnerState(true);
-            const res = await axios.post('https://desi-ecommerce-backend.onrender.come-backend.onrender.com//user', 
+            const res = await axios.post('https://desi-ecommerce-backend.onrender.come-backend.onrender.com/user', 
             {...obj, fname: fname, lname: lname, city: city, street: street});
             setSpinnerState(false);
             

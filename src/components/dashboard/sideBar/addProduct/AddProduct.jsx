@@ -156,7 +156,7 @@ const AddProduct = () => {
 
     const createCategory = async (productName, newCategory, price, img) => { // Fetch new category
         try {
-            const res = await axios.post('https://desi-ecommerce-backend.onrender.come-backend.onrender.com//category', 
+            const res = await axios.post('https://desi-ecommerce-backend.onrender.come-backend.onrender.com/category', 
             {newCategory: newCategory});
             setSpinnerState(false);
 

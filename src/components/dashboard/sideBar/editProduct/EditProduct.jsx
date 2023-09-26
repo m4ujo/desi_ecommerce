@@ -124,7 +124,8 @@ const EditProduct = () => {
         <form 
             className='edit-product-form' 
             onSubmit={handleTextInputChange}  
-            autoComplete='off' 
+            autoComplete='off'
+            encType='multipart/form-data'
             id={objProduct.id} 
             ref={form}
         >

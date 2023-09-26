@@ -136,8 +136,6 @@ const AddProduct = () => {
         try {
             setSpinnerState(true);
 
-            console.log(img)
-
             const res = await axios.post('https://desi-ecommerce-backend.onrender.com/product', 
             {productName: productName, category: category, price: price, img: img });
 

@@ -29,7 +29,7 @@ const Products = () => {
     useEffect(() => { // Fetch category dynamically
         (async () => {
             try {
-                const res = await axios.get(`https://desi-ecommerce-backend.onrender.come-backend.onrender.com/products/${location.id ? location.id : categoryId}`);
+                const res = await axios.get(`https://desi-ecommerce-backend.onrender.com/products/${location.id ? location.id : categoryId}`);
 
                 const found = res.data.data.find (firstProduct => firstProduct);
                 if(found) {

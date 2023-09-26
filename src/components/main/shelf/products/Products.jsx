@@ -34,7 +34,7 @@ const Products = () => {
     useEffect(() => { // Fetch category dynamically
         (async () => {
             try {
-                const res = await axios.get(`https://desi-ecommerce-backend.onrender.come-backend.onrender.com/products/${location.id ? location.id : categoryId}`);
+                const res = await axios.get(`https://desi-ecommerce-backend.onrender.com/products/${location.id ? location.id : categoryId}`);
 
                 const found = res.data.data.find (firstProduct => firstProduct);
                 if(found) {
@@ -64,7 +64,7 @@ const Products = () => {
 
     const selectedProductHandler = async (obj) => { // Selected product
         try {
-            await axios.post('https://desi-ecommerce-backend.onrender.come-backend.onrender.com/productCart', obj);
+            await axios.post('https://desi-ecommerce-backend.onrender.com/productCart', obj);
 
             dispatch({type: 'SET_REFETCH_CART', refetchCart: Math.random() * 2 });
         } catch (err) {
@@ -74,7 +74,7 @@ const Products = () => {
 
     const incrementProductCart = async (productId, request) => { // Change product amount
         try {
-            await axios.put('https://desi-ecommerce-backend.onrender.come-backend.onrender.com/productCart', 
+            await axios.put('https://desi-ecommerce-backend.onrender.com/productCart', 
             {shoppingCartId: openCart, productId: productId, request: request});
 
             dispatch({type: 'SET_REFETCH_CART', refetchCart: Math.random() * 2 });

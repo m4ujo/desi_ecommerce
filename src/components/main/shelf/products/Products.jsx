@@ -109,7 +109,7 @@ const Products = () => {
                                     >
                                         <figure>
                                             <Image 
-                                                cloudName='itamarrosenblum'
+                                                cloudName='dkzrgbiqk'
                                                 publicId={e.img}
                                             />
                                             <figcaption>{e.name}</figcaption>

@@ -41,7 +41,7 @@ const ShoppingList = () => {
                         <div>
                             <figure className='img-box'>
                                 <Image 
-                                    cloudName='itamarrosenblum'
+                                    cloudName='dkzrgbiqk'
                                     publicId={e.img} 
                                 />
                             </figure>

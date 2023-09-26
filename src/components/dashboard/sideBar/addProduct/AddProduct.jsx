@@ -132,11 +132,15 @@ const AddProduct = () => {
         }
     }
 
-    const addNewProduct = async (productName, category, price, img) => { // Fetch new product
+    const addNewProduct = async (productName, category, price, img ) => { // Fetch new product
         try {
             setSpinnerState(true);
+
+            console.log(img)
+
             const res = await axios.post('https://desi-ecommerce-backend.onrender.com/product', 
-            {productName: productName, category: category, price: price, img: img});
+            {productName: productName, category: category, price: price, img: img });
+
             setSpinnerState(false);
             
             if (res.data.status === '200') {
@@ -181,6 +185,7 @@ const AddProduct = () => {
             className='add-product-form'
             onSubmit={handleTextInputChange} 
             autoComplete='off'
+            encType='multipart/form-data'
             ref={form}
         >
             <div className='img-box'>

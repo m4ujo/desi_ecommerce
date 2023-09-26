@@ -145,7 +145,7 @@ const EditProduct = () => {
                     </label>
                     : 
                     <label htmlFor='image'>
-                        <Image cloudName='itamarrosenblum'publicId={objProduct.img} title='Click para seleccionar imagen' />
+                        <Image cloudName='dkzrgbiqk'publicId={objProduct.img} title='Click para seleccionar imagen' />
                     </label> }
                 </figure>
                 
@@ -206,7 +206,7 @@ const EditProduct = () => {
                     type='text' 
                     name='price' 
                     id='price' 
-                    placeholder={objProduct.price && `$${objProduct.price}`}
+                    placeholder={objProduct.price && `S/ ${objProduct.price}`}
                     onChange={(e) => {
                         if (e.target.value.length > 0) {
                             setErrMsgPrice('');

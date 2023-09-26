@@ -48,7 +48,7 @@ const Cart = () => {
                         <div className='img-data'>
                             <figure className='img-box'>
                                 <Image 
-                                    cloudName='itamarrosenblum'
+                                    cloudName='dkzrgbiqk'
                                     publicId={e.img} 
                                 />
                             </figure>

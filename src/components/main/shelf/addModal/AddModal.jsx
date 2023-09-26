@@ -60,7 +60,7 @@ const AddModal = () => {
                 <div className='modal-content'>
                     <figure>
                         <Image 
-                            cloudName='itamarrosenblum'
+                            cloudName='dkzrgbiqk'
                             publicId={selectedProduct.img}
                         />
                         <figcaption>{selectedProduct.name}</figcaption>

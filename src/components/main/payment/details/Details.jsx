@@ -188,7 +188,6 @@ const Details = () => {
                 </div>
 
                 <div className='date-box'>
-                    <label htmlFor='deliveryDate'>Fecha entrega</label>
                         <DatePicker
                             excludeDates={datesFull.map(e=> {
                                 return(new Date(e))

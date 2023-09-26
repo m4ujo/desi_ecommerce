@@ -118,7 +118,7 @@ const Products = () => {
                                 </div>
 
                                 <div className='price-box'>
-                                    <p><span>&#36;</span>{e.price}</p>
+                                    <p><span>S/ </span>{e.price}</p>
                                 </div>
                             </div>
 

@@ -3,7 +3,6 @@ import './NavQueries.css';
 import React from 'react';
 import { useHistory } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { IoPowerSharp } from 'react-icons/io5';
 import { FaArrowCircleRight } from 'react-icons/fa';
 
 const Nav = () => {
@@ -15,14 +14,14 @@ const Nav = () => {
             <div>
                 <h1>DESI <span>Ecommerce</span> </h1>
                 <div>
-                    <h2>Payment and Delivery Information</h2>
+                    <h2>Información de pago y entrega</h2>
                     <button
                         onClick={() => { 
                             history.push('/');
                             dispatch({type: 'SET_CART_SUMMERY', cartSummery: []});
                     }}
                     >
-                        Continue Shopping <span><FaArrowCircleRight /></span>
+                        Continua comprando <span><FaArrowCircleRight /></span>
                     </button> 
                 </div>
             </div>

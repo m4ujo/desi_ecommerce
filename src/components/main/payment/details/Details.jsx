@@ -137,7 +137,6 @@ const Details = () => {
 
             <form className='payment-form' onSubmit={isValid}>
                 <div className='city-box'>
-                    <label htmlFor='city'>City</label>
                     <input 
                         onDoubleClick={() => setCityInp(userDetails.city)}
                         onChange={(e) => {
@@ -152,19 +151,18 @@ const Details = () => {
                         type='text' 
                         name='city' 
                         id='city' 
-                        placeholder='Enter your city name'
+                        placeholder='Ciudad'
                         value={cityInp}
                         autoComplete='off'
                     />
                     <div className='help-box'>
                         <span><IoHelpCircleOutline /></span>
-                        <span>Double click on the 'City' field to get the defualt value</span>
+                        <span>Doble click en "Ciudad" para rellenar con valor por defecto</span>
                     </div>
                 { cityErrMsg ? <span className='err-msg'>{cityErrMsg}</span> : null }
                 </div>
 
                 <div className='street-box'>
-                    <label htmlFor='street'>Street</label>
                     <input 
                         onDoubleClick={() => setStreetInp(userDetails.street)}
                         onChange={(e) => {
@@ -178,19 +176,19 @@ const Details = () => {
                         type='street' 
                         name='street' 
                         id='street'
-                        placeholder='Enter your street address'
+                        placeholder='Dirección'
                         value={streetInp}
                         autoComplete='off'
                     />
                     <div className='help-box'>
                         <span><IoHelpCircleOutline /></span>
-                        <span>Double click on the 'Street' field to get the defualt value</span>
+                        <span>Doble click en "Dirección" para rellenar con valor por defecto</span>
                     </div>
                     { streetErrMsg ? <span className='err-msg'>{streetErrMsg}</span> : null }
                 </div>
 
                 <div className='date-box'>
-                    <label htmlFor='deliveryDate'>Delivery Date</label>
+                    <label htmlFor='deliveryDate'>Fecha entrega</label>
                         <DatePicker
                             excludeDates={datesFull.map(e=> {
                                 return(new Date(e))
@@ -207,23 +205,20 @@ const Details = () => {
                                 }
                             }}
                             minDate={new Date()}
-                            placeholderText='Pick a delivery date'
+                            placeholderText='Selecciona una fecha entrega'
                         />
                         { dateErrMsg ? <div><span className='err-msg'>{dateErrMsg}</span></div> : null }
                         <div className='help-box'>
-                        <span><IoHelpCircleOutline /></span>
-                        <span>Non-clickable dates are not available for delivery</span>
                     </div>
                 </div>
 
                 <div className='creditCard-box'>
-                    <label htmlFor='creditCard'>Credit Card</label>
                     <input 
                         type='number' 
                         name='creditCard' 
                         id='creditCard' 
                         autoComplete='off'
-                        placeholder='Enter your credit card number'
+                        placeholder='Número de tarjeta de crédito'
                         onChange={(e) => {
                             if (/^(?:4[0-9]{12}(?:[0-9]{3})?|[25][1-7][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$/.test(e.target.value)) {
                                 setCreditCardErrMsg('');

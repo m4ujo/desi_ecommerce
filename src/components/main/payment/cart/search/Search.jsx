@@ -27,7 +27,7 @@ const Search = () => {
                     type='search' 
                     name='search' 
                     maxLength='50'
-                    placeholder='Type to search a product'
+                    placeholder='Busca un producto'
                     ref={searchInput}
                     onChange={(e) => {
                         e.preventDefault();

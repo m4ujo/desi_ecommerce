@@ -38,7 +38,7 @@ const Cart = () => {
 
     return (
         <div className='payment-cart-container'>
-                <h2>Cart Summary</h2>
+                <h2>Resumen</h2>
             <Search />
             <div className='payment-cart-box'>
             <div className='cart-cntainer'>
@@ -56,8 +56,8 @@ const Cart = () => {
                         </div>
 
                         <div className='right-box'>
-                            <p>Total amount: <span>S/</span>{e.productCart.price}</p>
-                            <p>Quantity: {e.productCart.quantity}</p>
+                            <p>Monto total: <span>S/</span>{e.productCart.price}</p>
+                            <p>Cantidad: {e.productCart.quantity}</p>
                         </div>
                     </div>
                 );
@@ -66,7 +66,7 @@ const Cart = () => {
 
             <div className='total-price-box'>
                 <p>Subtotal: <span>S/</span>{subTotal}</p>
-                <p>{productNum} Products</p>
+                <p>{productNum} Productos</p>
             </div>
             </div>
         </div>

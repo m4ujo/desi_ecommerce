@@ -209,7 +209,7 @@ const AddProduct = () => {
             </div>
 
             <div className='product-name-box'>
-                <label htmlFor='productName'>Product Name</label>
+                <label htmlFor='productName'>Nombre de producto</label>
                 <input 
                     type='text' 
                     name='productName' 
@@ -271,7 +271,7 @@ const AddProduct = () => {
             </div> 
 
             <div className='add-category-box'>
-                <label htmlFor='newCategory'>Create a new Category</label>
+                <label htmlFor='newCategory'>Crear nueva categoría</label>
                 <input 
                     type='text' 
                     name='newCategory' 

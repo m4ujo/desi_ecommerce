@@ -115,8 +115,8 @@
     padding: 55px;
     margin-bottom: 45px;
     text-align: center;
-    border-bottom-left-radius: 30%;
-    border-bottom-right-radius: 30%;
+    /* border-bottom-left-radius: 30%;
+    border-bottom-right-radius: 30%; */
     background-image: linear-gradient(to bottom right, #041217, #041217c7);
 }
 

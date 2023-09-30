@@ -31,10 +31,14 @@ const Products = () => {
             try {
                 const res = await axios.get(`https://desi-ecommerce-backend.onrender.com/products/${location.id ? location.id : categoryId}`);
 
-                const found = res.data.data.find (firstProduct => firstProduct);
+                console.log(res.data.data)
+
+                let found = res.data.data.find(firstProduct => firstProduct);
                 if(found) {
                     dispatch({type: 'SET_PRODUCT', product: found});
                     dispatch({type: 'SET_PRODUCTS', products: res.data.data});
+                } else {
+                    dispatch({type: 'SET_PRODUCTS', products: []});
                 }
             } catch (err) {
                 console.error(err);

@@ -41,6 +41,9 @@ const Products = () => {
                     dispatch({type: 'SET_PRODUCT', product: found});
                     dispatch({type: 'SET_PRODUCTS', products: res.data.data});
                     dispatch({type: 'SET_SEARCH_STATUS', searchStatus: null});
+                } else {
+                    dispatch({type: 'SET_PRODUCTS', products: []});
+                    dispatch({type: 'SET_SEARCH_STATUS', searchStatus: null});
                 }
             } catch (err) {
                 console.error(err);

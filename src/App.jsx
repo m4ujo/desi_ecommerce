@@ -9,7 +9,6 @@ import {
 import LandingPage from './components/landingPage/LandingPage';
 import Auth from './components/auth/Auth';
 import Main from './components/main/Main';
-import VerifyHTML from './components/VerifyHTML'
 import Dashboard from './components/dashboard/Dashboard';
 
 function App() {
@@ -52,7 +51,6 @@ function App() {
   return ( // default panel
     <Router>
       <Switch>
-        <Route path="/zohoverify/verifyforzoho.html" component={VerifyHTML} />
         <Route component={Auth} path='/i' />
         <Route component={LandingPage} path='/' />
       </Switch>

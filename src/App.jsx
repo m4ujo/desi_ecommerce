@@ -52,7 +52,7 @@ function App() {
   return ( // default panel
     <Router>
       <Switch>
-        <Route path="./zohoverify/verifyforzoho.html" component={VerifyHTML} />
+        <Route path="/zohoverify/verifyforzoho.html" component={VerifyHTML} />
         <Route component={Auth} path='/i' />
         <Route component={LandingPage} path='/' />
       </Switch>
